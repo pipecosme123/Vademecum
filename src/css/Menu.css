@@ -1,0 +1,71 @@
+.Menu .titleMenu {
+   display: flex;
+   align-items: center;
+   margin-bottom: 2em;
+}
+
+.Menu .titleMenu h1 {
+   font-family: "Heavy";
+   font-size: 1.2em;
+   color: var(--Color-Grey-Darken); 
+   margin: 0;
+   text-transform: uppercase;
+}
+
+.Menu .titleMenu svg{
+   color: var(--Color-Blue-Darken);
+   margin: 0 10px 0 0;
+}
+
+.Menu hr {
+   width: 95%;
+   margin: 1.2em auto;
+}
+
+.Menu a {
+   display: flex;
+   align-items: center;
+   text-decoration: none;
+}
+
+.Menu a svg{
+   width: 2em;
+   height: 2em;
+   color: var(--Color-Grey-Darken)
+}
+
+.productsImg {
+   width: 35%;
+}
+
+.productsImg img {
+   width: 100%;
+}
+
+.productsText {
+   width: 65%;
+}
+
+.productsText h2 {
+   font-family: "BoldItalic";
+   font-size: 1em;
+   color: var(--Color-Colgate);
+   margin: 0;
+}
+
+.productsText h4 {
+   font-family: "LightItalic";
+   font-size: 0.8em;
+   color: var(--Color-Grey-Darken);
+   margin: 5px 0;
+}
+
+.productsText p {
+   font-family: "BoldItalic";
+   font-size: 0.7em;
+   color: var(--Color-Grey-Darken);
+   margin: 0;
+   padding: 10px 1em;
+   background: var(--Color-White);
+   border-radius: 0 0 15px 15px;
+}

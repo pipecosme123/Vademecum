@@ -1,6 +1,7 @@
 import React from 'react';
 import { GeneralImages } from '../Constants/Images';
 import { AiOutlineUser, AiOutlineMail } from 'react-icons/ai';
+import '../css/Login.css';
 
 const Login = () => {
 
@@ -14,18 +15,16 @@ const Login = () => {
             <form onSubmit={handleSubmit}>
                 <label>
                     <AiOutlineUser />
-                    <input type="text" />
+                    <input type="number" placeholder="Cédula"/>
                 </label>
 
                 <label>
                     <AiOutlineMail />
-                    <input type="text" />
+                    <input type="text" placeholder="Correo Electronico" />
                 </label>
 
                 <input type="submit" value="Ingresar" />
             </form>
-
-            <h1>Login</h1>
         </div>
     );
 };

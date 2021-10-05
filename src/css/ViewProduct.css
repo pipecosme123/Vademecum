@@ -1,0 +1,58 @@
+.ViewProduct .titleMenu {
+   display: flex;
+   align-items: center;
+   margin-bottom: 2em;
+}
+
+.ViewProduct .titleMenu h1 {
+   font-family: "Heavy";
+   font-size: 1.2em;
+   color: var(--Color-Grey-Darken);
+   margin: 0;
+   text-transform: uppercase;
+}
+
+.ViewProduct .titleMenu svg {
+   color: var(--Color-Blue-Darken);
+   margin: 0 10px 0 0;
+}
+
+.descriptionProduct h3 {
+   font-family: "Italic";
+   font-size: 1.4em;
+   color: var(--Color-Colgate);
+   text-align: center;
+}
+
+.descriptionProduct .imgProduct {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.descriptionProduct .imgProduct img {
+   width: 100%;
+}
+
+.descriptionProduct .imgProduct a {
+   text-decoration: none;
+   text-align: center;
+}
+
+.infoProduct{
+   margin: 2em 0;
+}
+
+.infoProduct h3{
+   width: 50%;
+   padding: 10px 20px;
+   background: var(--Color-White);
+   font-family: "BoldItalic";
+   font-size: 0.9em;
+   color: var(--Color-Colgate);
+   border-radius: 30px 0 30px 30px;
+}
+
+.infoProduct p{
+   font-family: "Italic";
+}

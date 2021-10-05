@@ -1,5 +1,7 @@
 export const RoutersLinks = {
     "login": "/",
     "home": "/home",
-    "preConsulta": "/PreConsultaPreConsulta"
+    "preConsulta": "/PreConsulta",
+    "viewProduct": "/Productos/:id",
+    "viewMenu": "/Productos"
 }

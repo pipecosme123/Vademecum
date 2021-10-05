@@ -1,0 +1,49 @@
+a.ButtonLink {
+   width: 95%;
+   height: 70px;
+   margin: 5px 0;
+   padding-left: 1em;
+   display: flex;
+   align-items: center;
+   border: 0px;
+   border-radius: 0 0 30px 0;
+   text-decoration: none;
+}
+
+a.ButtonLink:focus, a.ButtonLink:active { 
+   outline-color: transparent; 
+   outline-style: none;
+}
+
+a.ButtonLink p{
+   font-family: "Bold";
+   font-size: 1em;
+   color: var(--Color-Grey);
+   text-align: left;
+}
+
+a.ButtonLink.PreConsulta p{
+   font-family: "Regular";
+}
+
+.ButtonLink.PreConsulta,
+.ButtonLink.buttonBlue {
+   background: var(--Color-Blue-Lighten);
+}
+
+.ButtonLink.PreConsulta:active,
+.ButtonLink.buttonBlue:active,
+.ButtonLink.buttonGreen:active {
+   filter: saturate(2);
+}
+
+.ButtonLink.buttonGreen {
+   background: var(--Color-Green-Lighten);
+}
+
+.ButtonLink.PreConsulta img {
+   width: 70px;
+   position: relative;
+   right: 8px;
+   bottom: 10px;
+}

@@ -2,7 +2,7 @@ import { imgPreConsulta } from "./Images";
 
 export const PreConsulta = [
     {
-        id: 1,
+        id: 0,
         img: imgPreConsulta.Enjuague_PerioGard,
         name: "Enjuague bucal Colgate® PerioGard®",
         PrincipioActivo: "CLORHEXIDINA, 0.12%",

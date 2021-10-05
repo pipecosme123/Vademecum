@@ -1,12 +1,12 @@
-import DentistLogin from "../img/Dentist.jpg";
-import LogoColgate_LogoVademecum from "../img/LogoColgate_LogoVademecum.svg";
-import LogoVademecum from "../img/LogoVademecum.svg";
-import PandemiaVademecum from "../img/PandemiaVademecum.svg";
-import RXVademecum from "../img/RXVademecum.svg";
+let DentistLogin = "https://imagenes.kagencia.com/Vademecum/Dentist.jpg";
+let LogoColgate_LogoVademecum = "https://imagenes.kagencia.com/Vademecum/LogoColgate_LogoVademecum.svg";
+let LogoVademecum = "https://imagenes.kagencia.com/Vademecum/LogoVademecum.svg";
+let PandemiaVademecum = "https://imagenes.kagencia.com/Vademecum/PandemiaVademecum.svg";
+let RXVademecum = "https://imagenes.kagencia.com/Vademecum/RXVademecum.svg";
 
 // PRE CONSULTA
-import Enjuague_PerioGard from '../img/Productos/PreConsulta/Enjuague_PerioGard.png';
-import Enjuague_Total12 from '../img/Productos/PreConsulta/Enjuague_Total12.png';
+let Enjuague_PerioGard = 'https://imagenes.kagencia.com/Vademecum/Productos/PreConsulta/Enjuague_PerioGard.png';
+let Enjuague_Total12 = 'https://imagenes.kagencia.com/Vademecum/Productos/PreConsulta/Enjuague_Total12.png';
 
 export const GeneralImages = {
     "DentistLogin": DentistLogin,

@@ -1,0 +1,28 @@
+.SearchBar{
+   width: max-content;
+   padding: 2px 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 2px solid #d6d6d6;
+   border-radius: 20px;
+   margin: 0 auto 1em;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+.SearchBar input{
+   border: 0px;
+   outline: none;
+   font-size: 1.1em;
+}
+
+.SearchBar input::placeholder{
+   font-size: 0.9em;
+   font-family: "ExtraLightItalic";
+   color: #d6d6d6;
+   padding-left: 1em;
+}
+
+.SearchBar svg{
+   color: #d6d6d6;
+}

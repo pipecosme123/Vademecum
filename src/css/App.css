@@ -1,3 +1,16 @@
-body{
+@import url('./globalVar.css');
+@import url('./fonts.css');
+
+body {
+  font-family: "Regular";
   margin: 0;
+}
+
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.container {
+  width: 90%;
+  margin: 120px auto 0;
 }
