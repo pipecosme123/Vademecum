@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { BsFillCircleFill } from 'react-icons/bs';
-import { useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 import SearchBar from '../Components/SearchBar';
 import '../css/ViewProduct.css';
 
 const ViewProduct = ({ arrayProduct }) => {
 
-   const { id } = useParams();
+   // const { id } = useParams();
 
    const [product, setProduct] = useState({
       category: "",
@@ -17,18 +17,18 @@ const ViewProduct = ({ arrayProduct }) => {
       observaciones: ""
    });
 
-   const data = arrayProduct[id];
+   // const data = arrayProduct[id];
 
    useEffect(() => {
       setProduct({
          // category: arrayProduct.,
-         name: data.name,
-         img: data.img,
-         principioActivo: data.PrincipioActivo,
-         modoUso: data.ModoUso,
-         observaciones: data.Obsertvaciones
+         name: arrayProduct.name,
+         img: arrayProduct.img,
+         principioActivo: arrayProduct.PrincipioActivo,
+         modoUso: arrayProduct.ModoUso,
+         observaciones: arrayProduct.Obsertvaciones
       })
-   }, [data])
+   }, [arrayProduct])
 
    return (
       <div className='ViewProduct container'>
@@ -41,7 +41,7 @@ const ViewProduct = ({ arrayProduct }) => {
             <h3>{product.name}</h3>
             <div className="imgProduct">
                <img src={product.img} alt="" />
-               <a href="/##">PRESCRIBIR</a>
+               <a href="https://www.pres.kagencia.com/login">PRESCRIBIR</a>
             </div>
             <div className="infoProduct">
                <h3>Principio Activo</h3>
@@ -51,7 +51,7 @@ const ViewProduct = ({ arrayProduct }) => {
                <h3>Modo de uso</h3>
                <p>{product.modoUso}</p>
             </div>
-            <div className="infoProduct">
+            <div className={product.observaciones === "" || product.observaciones === undefined ? "noVisible" : "infoProduct"}>
                <h3>Observaciones</h3>
                <p>{product.observaciones}</p>
             </div>

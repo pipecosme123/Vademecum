@@ -14,7 +14,8 @@ const Routers = () => {
                 <Route exact path={RoutersLinks.login} component={() => <Login /> }/>
                 <Route exact path={RoutersLinks.home} component={() => <Home /> }/>
                 <Route exact path={RoutersLinks.preConsulta} component={() => <Menu products={PreConsulta} /> }/>
-                <Route path={RoutersLinks.viewProduct} component={() => <ViewProduct arrayProduct={PreConsulta} /> }/>
+                <Route path={RoutersLinks.viewProduct1} component={() => <ViewProduct arrayProduct={PreConsulta[0]} /> }/>
+                <Route path={RoutersLinks.viewProduct2} component={() => <ViewProduct arrayProduct={PreConsulta[1]} /> }/>
             </Switch>
         </Router>
     );

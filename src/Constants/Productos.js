@@ -14,6 +14,6 @@ export const PreConsulta = [
         name: "Enjuague bucal Colgate® TOTAL 12®",
         PrincipioActivo: "CPC (Cloruro de Cetil Piridinio)  0.12%",
         ModoUso: "15 ml x 30-60 segundos antes de cada procedimiento odontológico",
-        Obsertvaciones: "Lorem........................................................."
+        Obsertvaciones: "Enjuague completamente después del cepillado."
     }
 ]
