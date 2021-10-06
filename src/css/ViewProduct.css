@@ -18,6 +18,8 @@
 }
 
 .descriptionProduct h3 {
+   width: 90%;
+   margin: 0 auto 1em;
    font-family: "Italic";
    font-size: 1.4em;
    color: var(--Color-Colgate);

@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { BsFillCircleFill } from 'react-icons/bs';
-// import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import SearchBar from '../Components/SearchBar';
 import '../css/ViewProduct.css';
 
 const ViewProduct = ({ arrayProduct }) => {
 
-   // const { id } = useParams();
+   const { id } = useParams();
 
    const [product, setProduct] = useState({
       category: "",
@@ -17,18 +17,18 @@ const ViewProduct = ({ arrayProduct }) => {
       observaciones: ""
    });
 
-   // const data = arrayProduct[id];
+   const data = arrayProduct[id];
 
    useEffect(() => {
       setProduct({
          // category: arrayProduct.,
-         name: arrayProduct.name,
-         img: arrayProduct.img,
-         principioActivo: arrayProduct.PrincipioActivo,
-         modoUso: arrayProduct.ModoUso,
-         observaciones: arrayProduct.Obsertvaciones
+         name: data.name,
+         img: data.img,
+         principioActivo: data.PrincipioActivo,
+         modoUso: data.ModoUso,
+         observaciones: data.Obsertvaciones
       })
-   }, [arrayProduct])
+   }, [data])
 
    return (
       <div className='ViewProduct container'>
@@ -38,7 +38,7 @@ const ViewProduct = ({ arrayProduct }) => {
             <h1>Pre consulta odontológica en pandemia</h1>
          </div>
          <div className="descriptionProduct">
-            <h3>{product.name}</h3>
+            <h3>{product.name.toUpperCase()}</h3>
             <div className="imgProduct">
                <img src={product.img} alt="" />
                <a href="https://www.pres.kagencia.com/login">PRESCRIBIR</a>
