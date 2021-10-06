@@ -66,7 +66,7 @@ export const FaseHigienica = [
     }
 ];
 
-export const FaseCorrectiva =[
+export const FaseCorrectiva = [
     {
         id: 0,
         img: imgPreConsulta.Enjuague_PerioGard,
@@ -84,14 +84,14 @@ export const FaseCorrectiva =[
         Observaciones: "Según evolución"
     },
     {
-        id: 3,
+        id: 2,
         img: imgPreConsulta.Enjuague_Total12,
         name: "Crema dental Colgate® Colgate® TOTAL 12®",
         PrincipioActivo: "Arginina 1.5% + Doble Zinc",
         ModoUso: "Cepillado 2- 3 veces/día"
     },
     {
-        id: 4,
+        id: 3,
         img: imgPreConsulta.Enjuague_Total12,
         name: "Cepillo dental ELMEX",
         PrincipioActivo: "",
@@ -99,7 +99,7 @@ export const FaseCorrectiva =[
         Observaciones: ""
     },
     {
-        id: 5,
+        id: 4,
         img: imgPreConsulta.Enjuague_Total12,
         name: "Cepillo dental eléctrico Colgate ETB",
         PrincipioActivo: "",
@@ -108,18 +108,146 @@ export const FaseCorrectiva =[
     }
 ]
 
-export const Ferulización =[
+export const Ferulización = [
     {
-        id: 1,
+        id: 0,
         img: imgPreConsulta.Enjuague_Total12,
         name: "Enjuague bucal Colgate® TOTAL 12®",
         PrincipioActivo: "CCPC (Cloruro de Cetil Piridinio)  0.075% Lactato de ZInc 0.24% NaF 0.05%",
         ModoUso: "15 ml/2 veces al dia por 30-60 segundos de uso diario",
         Observaciones: ""
     },
+    {
+        id: 1,
+        img: imgPreConsulta.Enjuague_Total12,
+        name: "Crema dental Colgate® Colgate® TOTAL 12®",
+        PrincipioActivo: "Arginina 1.5% + Doble Zinc",
+        ModoUso: "Cepillado 2- 3 veces/día"
+    },
+    {
+        id: 2,
+        img: imgPreConsulta.Enjuague_Total12,
+        name: "Cepillo dental SLIM SOFT",
+        PrincipioActivo: "",
+        ModoUso: "Cepillado 2- 3 veces/día",
+        Observaciones: "Cambiarlo máximo cada 3 meses"
+    },
+    {
+        id: 3,
+        img: imgPreConsulta.Enjuague_Total12,
+        name: "Cepillo dental ELMEX",
+        PrincipioActivo: "",
+        ModoUso: "Cepillado 2- 3 veces/día",
+        Observaciones: ""
+    },
+    {
+        id: 4,
+        img: imgPreConsulta.Enjuague_Total12,
+        name: "Cepillo dental eléctrico Colgate ETB",
+        PrincipioActivo: "",
+        ModoUso: "Cepillado 2- 3 veces/día",
+        Observaciones: ""
+    }
 ]
 
 
+export const Mantenimiento = [
+    {
+        id: 0,
+        img: imgPreConsulta.Enjuague_Total12,
+        name: "Enjuague bucal Colgate® TOTAL 12®",
+        PrincipioActivo: "CCPC (Cloruro de Cetil Piridinio)  0.075% Lactato de ZInc 0.24% NaF 0.05%",
+        ModoUso: "15 ml/2 veces al dia por 30-60 segundos por 7 a 20 días",
+        Observaciones: "Según evolución"
+    },
+    {
+        id: 1,
+        img: imgPreConsulta.Enjuague_Total12,
+        name: "Crema dental Colgate® Colgate® TOTAL 12®",
+        PrincipioActivo: "Arginina 1.5% + Doble Zinc",
+        ModoUso: "Cepillado 2- 3 veces/día"
+    },
+    {
+        id: 2,
+        img: imgPreConsulta.Enjuague_Total12,
+        name: "Cepillo dental SLIM SOFT",
+        PrincipioActivo: "",
+        ModoUso: "Cepillado 2- 3 veces/día",
+        Observaciones: "Cambiarlo máximo cada 3 meses"
+    },
+    {
+        id: 3,
+        img: imgPreConsulta.Enjuague_Total12,
+        name: "Cepillo dental ELMEX",
+        PrincipioActivo: "",
+        ModoUso: "Cepillado 2- 3 veces/día",
+        Observaciones: ""
+    },
+]
+
+export const CirugiaOral_Sindrome_Boca_Seca =[
+    {
+        id: 0,
+        img: imgPreConsulta.Enjuague_Total12,
+        name: "Crema dental Colgate® Colgate® TOTAL 12®",
+        PrincipioActivo: "Arginina 1.5% + Doble Zinc",
+        ModoUso: "Cepillado 2- 3 veces/día"
+    },
+    {
+        id: 1,
+        img: imgPreConsulta.Enjuague_Total12,
+        name: "Cepillo dental SLIM SOFT",
+        PrincipioActivo: "",
+        ModoUso: "Cepillado 2- 3 veces/día",
+        Observaciones: "Cambiarlo máximo cada 3 meses"
+    },
+    {
+        id: 2,
+        img: imgPreConsulta.Enjuague_Total12,
+        name: "Cepillo dental ELMEX",
+        PrincipioActivo: "",
+        ModoUso: "Cepillado 2- 3 veces/día",
+        Observaciones: ""
+    },
+]
+
+export const CirugiaOral_Candidiasis =[
+    {
+        id: 0,
+        img: imgPreConsulta.Enjuague_PerioGard,
+        name: "Enjuague bucal Colgate® PerioGard®",
+        PrincipioActivo: "CLORHEXIDINA, 0.12%",
+        ModoUso: "Inmersión de las prótesis por 8 horas por 4 noches. 15 ml/2 veces al dia 30-60 segundos por 7 a 20 días",
+        Observaciones: "Según evolución"
+    },
+    {
+        id: 1,
+        img: imgPreConsulta.Enjuague_Total12,
+        name: "Crema dental Colgate® Colgate® TOTAL 12®",
+        PrincipioActivo: "Arginina 1.5% + Doble Zinc",
+        ModoUso: "Cepillado 2- 3 veces/día"
+    },
+    {
+        id: 1,
+        img: imgPreConsulta.Enjuague_Total12,
+        name: "Cepillo dental ULTRASOFT",
+        PrincipioActivo: "",
+        ModoUso: "Cepillado 2- 3 veces/día",
+        Observaciones: "Cepillar la prótesis removible fuera de la boca"
+    },
+    {
+        id: 4,
+        img: imgPreConsulta.Enjuague_Total12,
+        name: "Cepillo dental eléctrico Colgate ETB",
+        PrincipioActivo: "",
+        ModoUso: "Cepillado 2- 3 veces/día",
+        Observaciones: "Cepillar la prótesis removible fuera de la boca"
+    }
+]
+
+export const CirugiaOral_Inmunosuprimido =[
+    
+];
 // {
 //     id: 1,
 //     img: ,
