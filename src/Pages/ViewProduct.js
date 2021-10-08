@@ -26,7 +26,7 @@ const ViewProduct = ({ arrayProduct }) => {
          img: data.img,
          principioActivo: data.PrincipioActivo,
          modoUso: data.ModoUso,
-         observaciones: data.Obsertvaciones
+         observaciones: data.Observaciones
       })
    }, [data])
 
@@ -43,11 +43,11 @@ const ViewProduct = ({ arrayProduct }) => {
                <img src={product.img} alt="" />
                <a href="https://www.pres.kagencia.com/login">PRESCRIBIR</a>
             </div>
-            <div className="infoProduct">
+            <div className={product.principioActivo === "" || product.principioActivo === undefined ? "noVisible" : "infoProduct"}>
                <h3>Principio Activo</h3>
                <p>{product.principioActivo}</p>
             </div>
-            <div className="infoProduct">
+            <div className={product.modoUso === "" || product.modoUso === undefined ? "noVisible" : "infoProduct"}>
                <h3>Modo de uso</h3>
                <p>{product.modoUso}</p>
             </div>

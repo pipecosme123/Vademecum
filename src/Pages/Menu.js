@@ -1,16 +1,26 @@
 import React from 'react';
 import { RoutersLinks } from '../Constants/RoutersLinks';
-import { BsFillCircleFill } from 'react-icons/bs';
-import { IoIosArrowForward } from 'react-icons/io';
+// import { BsFillCircleFill } from 'react-icons/bs';
+import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io';
 import '../css/Menu.css';
 import SearchBar from '../Components/SearchBar';
+// import { useParams } from 'react-router';
 
 const Menu = ({ products }) => {
+
+   // const { name } = useParams();
+
+   // const data = getDataArray();
+
+   // const getDataArray = () => {
+
+   // }
+
    return (
       <div className='Menu container'>
          <SearchBar />
          <div className="titleMenu">
-            <BsFillCircleFill />
+            <IoIosArrowBack />
             <h1>Pre consulta odontológica en pandemia</h1>
          </div>
          {products.map((prod, index) => (
