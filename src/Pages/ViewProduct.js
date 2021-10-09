@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import SearchBar from '../Components/SearchBar';
 import '../css/ViewProduct.css';
 
-const ViewProduct = ({ arrayProduct }) => {
+const ViewProduct = ({ title, arrayProduct }) => {
 
    const { id } = useParams();
 
@@ -28,6 +28,8 @@ const ViewProduct = ({ arrayProduct }) => {
          modoUso: data.ModoUso,
          observaciones: data.Observaciones
       })
+
+      
    }, [data])
 
    return (
@@ -35,7 +37,7 @@ const ViewProduct = ({ arrayProduct }) => {
          <SearchBar />
          <div className="titleMenu">
             <BsFillCircleFill />
-            <h1>Pre consulta odontológica en pandemia</h1>
+            <h1>{title.toUpperCase()}</h1>
          </div>
          <div className="descriptionProduct">
             <h3>{product.name.toUpperCase()}</h3>

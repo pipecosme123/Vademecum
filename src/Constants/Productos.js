@@ -112,7 +112,7 @@ export const Periodoncia_FaseCorrectiva = [
     }
 ]
 
-export const Periodoncia_Ferulización = [
+export const Periodoncia_Ferulizacion = [
     {
         id: 0,
         img: imgEnjuaguesBucales.Enjuague_Total12,

@@ -1,12 +1,13 @@
 import React from 'react';
-import { RoutersLinks } from '../Constants/RoutersLinks';
+// import { RoutersLinks } from '../Constants/RoutersLinks';
 // import { BsFillCircleFill } from 'react-icons/bs';
 import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io';
 import '../css/Menu.css';
 import SearchBar from '../Components/SearchBar';
+import { Link } from 'react-router-dom';
 // import { useParams } from 'react-router';
 
-const Menu = ({ products }) => {
+const Menu = ({ title, url, products }) => {
 
    // const { name } = useParams();
 
@@ -21,11 +22,11 @@ const Menu = ({ products }) => {
          <SearchBar />
          <div className="titleMenu">
             <IoIosArrowBack />
-            <h1>Pre consulta odontológica en pandemia</h1>
+            <h1>{title.toUpperCase()}</h1>
          </div>
          {products.map((prod, index) => (
             <div key={index}>
-               <a href={`${RoutersLinks.viewMenu}/${index}`}>
+               <Link to={`${url}/${index}`}>
                   <div className="productsImg">
                      <img src={prod.img} alt="" />
                   </div>
@@ -35,7 +36,7 @@ const Menu = ({ products }) => {
                      <p>Principio activo, Modo de uso, Observaciones</p>
                   </div>
                   <IoIosArrowForward />
-               </a>
+               </Link>
                <hr />
             </div>
          ))}

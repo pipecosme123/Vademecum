@@ -1,5 +1,5 @@
 import {
-    Periodoncia_FaseHigienica, Periodoncia_FaseCorrectiva, Periodoncia_Ferulización, Periodoncia_Mantenimiento,
+    Periodoncia_FaseHigienica, Periodoncia_FaseCorrectiva, Periodoncia_Ferulizacion, Periodoncia_Mantenimiento,
     CirugiaOral_Sindrome_Boca_Seca, CirugiaOral_Candidiasis, CirugiaOral_Inmunosuprimido, CirugiaOral_Quimioterapia,
     OrtopediaMaxilar_TtoActivo, OrtopediaMaxilar_RetencionFija, OrtopediaMaxilar_Mantenimiento, OrtopediaMaxilar_Mini_implantes
 } from "./Productos";
@@ -24,8 +24,8 @@ export const SituacionesEspecialidad = [
             },
             {
                 name: "Ferulización",
-                linea: Periodoncia_Ferulización,
-                link: RoutersLinks.Periodoncia_Ferulización,
+                linea: Periodoncia_Ferulizacion,
+                link: RoutersLinks.Periodoncia_Ferulizacion,
                 color: "Blue"
             },
             {
@@ -55,13 +55,13 @@ export const SituacionesEspecialidad = [
                 color: "Green"
             },
             {
-                name: "Pte. Inmunosuprimido",
+                name: "Paciente Inmunosuprimido",
                 linea: CirugiaOral_Inmunosuprimido,
                 link: RoutersLinks.CirugiaOral_Inmunosuprimido,
                 color: "Green"
             },
             {
-                name: "Pte. Quimioterapia",
+                name: "Paciente Quimioterapia",
                 linea: CirugiaOral_Quimioterapia,
                 link: RoutersLinks.CirugiaOral_Quimioterapia,
                 color: "Green"
