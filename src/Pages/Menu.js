@@ -1,28 +1,26 @@
-import React from 'react';
-// import { RoutersLinks } from '../Constants/RoutersLinks';
-// import { BsFillCircleFill } from 'react-icons/bs';
+import React, { useEffect } from 'react';
 import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io';
-import '../css/Menu.css';
 import SearchBar from '../Components/SearchBar';
 import { Link } from 'react-router-dom';
-// import { useParams } from 'react-router';
+import { RoutersLinks } from '../Constants/RoutersLinks';
+import '../css/Menu.css';
+import Cookies from 'universal-cookie';
+const cookies = new Cookies();
 
 const Menu = ({ title, url, products }) => {
 
-   // const { name } = useParams();
-
-   // const data = getDataArray();
-
-   // const getDataArray = () => {
-
-   // }
+   useEffect(() => {
+      if (cookies.get('cedulas') === "" || cookies.get('cedulas') === undefined) {
+        window.location.href = `${RoutersLinks.login}`;
+      }
+    })
 
    return (
       <div className='Menu container'>
          <SearchBar />
-         <div className="titleMenu">
+         <div className="titleMenu" onClick={() => window.history.go(-1)}>
             <IoIosArrowBack />
-            <h1>{title.toUpperCase()}</h1>
+            <h1 dangerouslySetInnerHTML={{__html: `${title.toUpperCase()}`}}></h1>
          </div>
          {products.map((prod, index) => (
             <div key={index}>
@@ -31,9 +29,11 @@ const Menu = ({ title, url, products }) => {
                      <img src={prod.img} alt="" />
                   </div>
                   <div className="productsText">
-                     <h2>{prod.name.toUpperCase()}</h2>
-                     <h4>{prod.PrincipioActivo}</h4>
-                     <p>Principio activo, Modo de uso, Observaciones</p>
+                     <h2 dangerouslySetInnerHTML={{__html: `${prod.name.toUpperCase()}`}}></h2>
+                     <h4>{prod.PrincipioActivo || prod.ModoUso}</h4>
+                     <p>{prod.PrincipioActivo ? "Principio activo": ""}{prod.PrincipioActivo && prod.ModoUso ? ",": ""}
+                     {prod.ModoUso ? " Modo de uso": ""}{prod.Observaciones && prod.ModoUso ? ",": ""}
+                     {prod.Observaciones ? " Observaciones": ""}</p>
                   </div>
                   <IoIosArrowForward />
                </Link>

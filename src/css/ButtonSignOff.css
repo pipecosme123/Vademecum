@@ -1,0 +1,9 @@
+.ButtonSignOff {
+   margin: 1em auto;
+   display: flex;
+   justify-content: center;
+}
+
+.ButtonSignOff button{
+   font-size: 1em !important;
+}

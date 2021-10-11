@@ -25,8 +25,9 @@ const Routers = () => {
 
 
             <Route exact path={RoutersLinks.preConsulta} component={() =>
-               <Menu products={PreConsulta} />}
+               <Menu title={"Pre consulta odontológica <br /> en pandemia"} url={RoutersLinks.preConsulta} products={PreConsulta} />}
             />
+            <Route path={RoutersLinks.preConsulta_View} children={<ViewProduct title={"Pre consulta odontológica <br /> en pandemia"} arrayProduct={PreConsulta} />} />
 
 
             <Route exact path={RoutersLinks.periodoncia} component={() =>
@@ -68,17 +69,17 @@ const Routers = () => {
             />
 
             <Route exact path={RoutersLinks.CirugiaOral_Inmunosuprimido} component={() =>
-               <Menu title={"Cirugía Oral y Maxilofacial - Inmunosuprimido"} url={RoutersLinks.CirugiaOral_Inmunosuprimido} products={CirugiaOral_Inmunosuprimido} />}
+               <Menu title={"Cirugía Oral y Maxilofacial - Paciente Inmunosuprimido"} url={RoutersLinks.CirugiaOral_Inmunosuprimido} products={CirugiaOral_Inmunosuprimido} />}
             />
 
             <Route exact path={RoutersLinks.CirugiaOral_Quimioterapia} component={() =>
-               <Menu title={"Cirugía Oral y Maxilofacial - Quimioterapia"} url={RoutersLinks.CirugiaOral_Quimioterapia} products={CirugiaOral_Quimioterapia} />}
+               <Menu title={"Cirugía Oral y Maxilofacial - Paciente Quimioterapia"} url={RoutersLinks.CirugiaOral_Quimioterapia} products={CirugiaOral_Quimioterapia} />}
             />
 
             <Route path={RoutersLinks.CirugiaOral_Sindrome_Boca_Seca_View} children={<ViewProduct title={"Cirugía Oral y Maxilofacial - Sindrome Boca Seca"} arrayProduct={CirugiaOral_Sindrome_Boca_Seca} />} />
             <Route path={RoutersLinks.CirugiaOral_Candidiasis_View} children={<ViewProduct title={"Cirugía Oral y Maxilofacial - Candidiasis"} arrayProduct={CirugiaOral_Candidiasis} />} />
-            <Route path={RoutersLinks.CirugiaOral_Inmunosuprimido_View} children={<ViewProduct title={"Cirugía Oral y Maxilofacial - Inmunosuprimido"} arrayProduct={CirugiaOral_Inmunosuprimido} />} />
-            <Route path={RoutersLinks.CirugiaOral_Quimioterapia_View} children={<ViewProduct title={"Cirugía Oral y Maxilofacial - Quimioterapia"} arrayProduct={CirugiaOral_Quimioterapia} />} />
+            <Route path={RoutersLinks.CirugiaOral_Inmunosuprimido_View} children={<ViewProduct title={"Cirugía Oral y Maxilofacial - Paciente Inmunosuprimido"} arrayProduct={CirugiaOral_Inmunosuprimido} />} />
+            <Route path={RoutersLinks.CirugiaOral_Quimioterapia_View} children={<ViewProduct title={"Cirugía Oral y Maxilofacial - Paciente Quimioterapia"} arrayProduct={CirugiaOral_Quimioterapia} />} />
 
 
             {/* <Route exact path={RoutersLinks.patologiaOral} component={() => 
@@ -140,13 +141,13 @@ const Routers = () => {
             />
 
 
-            <Route path={RoutersLinks.pacienteHospitalizado_View} children={<ViewProduct title={"PACIENTE HOSPITALIZADO"} arrayProduct={Periodoncia_FaseHigienica} />} />
-            <Route path={RoutersLinks.pacienteHospitalizadoUCI_View} children={<ViewProduct title={"PACIENTE HOSPITALIZADO EN UCI"} arrayProduct={Periodoncia_FaseHigienica} />} />
-            <Route path={RoutersLinks.pacienteDeCirugiaGeneral_View} children={<ViewProduct title={"PACIENTE DE CIRUGÍA GENERAL PROGRAMADA EN HOSPITAL"} arrayProduct={Periodoncia_FaseHigienica} />} />
-            <Route path={RoutersLinks.preparacionPreQuirurgica_View} children={<ViewProduct title={"PREPARACIÓN PRE-QUIRÚRGICA"} arrayProduct={Periodoncia_FaseHigienica} />} />
-            <Route path={RoutersLinks.postOperatorios_View} children={<ViewProduct title={"POST-OPERATORIOS QUIRÚRGICOS"} arrayProduct={Periodoncia_FaseHigienica} />} />
+            <Route path={RoutersLinks.pacienteHospitalizado_View} children={<ViewProduct title={"PACIENTE HOSPITALIZADO"} arrayProduct={SituacionesClinicasComunes_PteHospitalizado} />} />
+            <Route path={RoutersLinks.pacienteHospitalizadoUCI_View} children={<ViewProduct title={"PACIENTE HOSPITALIZADO EN UCI"} arrayProduct={SituacionesClinicasComunes_PteHospitalizadoUCI} />} />
+            <Route path={RoutersLinks.pacienteDeCirugiaGeneral_View} children={<ViewProduct title={"PACIENTE DE CIRUGÍA GENERAL PROGRAMADA EN HOSPITAL"} arrayProduct={SituacionesClinicasComunes_PteCirugiaGeneral} />} />
+            <Route path={RoutersLinks.preparacionPreQuirurgica_View} children={<ViewProduct title={"PREPARACIÓN PRE-QUIRÚRGICA"} arrayProduct={SituacionesClinicasComunes_PreparacionPreQuirurgica} />} />
+            <Route path={RoutersLinks.postOperatorios_View} children={<ViewProduct title={"POST-OPERATORIOS QUIRÚRGICOS"} arrayProduct={SituacionesClinicasComunes_PostOperatorios} />} />
 
-            <Route path={RoutersLinks.viewProduct} children={<ViewProduct arrayProduct={PreConsulta} />} />
+            
             {/* <Route path={RoutersLinks.viewProduct2} component={() => 
                <ViewProduct arrayProduct={PreConsulta[1]} /> }/> 
                */}

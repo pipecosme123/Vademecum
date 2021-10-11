@@ -89,7 +89,7 @@ export const SituacionesEspecialidad = [
         link: RoutersLinks.ortodonciaOrtopediaMaxilar,
         menu: [
             {
-                name: "Traramiento Activo",
+                name: "Tratamiento Activo",
                 linea: OrtopediaMaxilar_TtoActivo,
                 link: RoutersLinks.OrtopediaMaxilar_TtoActivo,
                 color: "Green"

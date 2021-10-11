@@ -1,8 +1,9 @@
 export const RoutersLinks = {
     login: "/",
-    home: "/home",
+    home: "/Home",
 
     preConsulta: "/PreConsulta",
+    preConsulta_View: "/PreConsulta/:id",
 
     periodoncia: "/Periodoncia",
     Periodoncia_FaseHigienica: "/Periodoncia_FaseHigienica",

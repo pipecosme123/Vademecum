@@ -1,8 +1,8 @@
 .ButtonLink {
-   width: 95%;
+   width: 91%;
    height: 70px;
    margin: 5px 0;
-   padding-left: 1em;
+   padding: 0 1em;
    display: flex;
    align-items: center;
    border: 0px;

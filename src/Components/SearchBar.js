@@ -6,7 +6,7 @@ const SearchBar = () => {
     return (
         <div className='SearchBar'>
             <AiOutlineSearch />
-            <input type="search" name="" id="" placeholder="¿Que desea buscar?" />
+            <input type="text" name="" id="" placeholder="¿Que desea buscar?" />
         </div>
     );
 };

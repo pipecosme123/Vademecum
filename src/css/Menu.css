@@ -5,21 +5,19 @@
 }
 
 .Menu .titleMenu h1 {
+   width: 90%;
    font-family: "Heavy";
-   font-size: 1.2em;
+   font-size: 1em;
    color: var(--Color-Grey-Darken); 
    margin: 0;
    text-transform: uppercase;
 }
 
 .Menu .titleMenu svg{
+   width: 20px;
+   height: 20px;
    color: var(--Color-Blue-Darken);
    margin: 0 10px 0 0;
-}
-
-.Menu hr {
-   width: 95%;
-   margin: 1.2em auto;
 }
 
 .Menu a {
@@ -36,6 +34,7 @@
 
 .productsImg {
    width: 35%;
+   padding-right: 10px;
 }
 
 .productsImg img {
@@ -55,15 +54,15 @@
 
 .productsText h4 {
    font-family: "LightItalic";
-   font-size: 0.8em;
+   font-size: 0.6em;
    color: var(--Color-Grey-Darken);
    margin: 5px 0;
 }
 
 .productsText p {
    font-family: "BoldItalic";
-   font-size: 0.7em;
-   color: var(--Color-Grey-Darken);
+   font-size: 0.5em;
+   color: var(--Color-Grey-Lighten);
    margin: 0;
    padding: 10px 1em;
    background: var(--Color-White);

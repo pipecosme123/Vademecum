@@ -10,6 +10,14 @@ a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.SUPERINDICE{
+  font-size: 10px;
+}
+
+.descriptionProduct .SUPERINDICE{
+  font-size: 14px;
+}
+
 .noVisible{
   display: none;
 }
@@ -17,4 +25,12 @@ a {
 .container {
   width: 90%;
   margin: 120px auto 0;
+}
+
+hr {
+  width: 95%;
+  height: 0.1px;
+  background: #d3d3d3;
+  margin: 1.2em auto;
+  border: 0px solid;
 }

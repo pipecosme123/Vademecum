@@ -51,7 +51,7 @@
       /* position: absolute; */
    }
 
-   form input[type=submit], .descriptionProduct .imgProduct a {
+   form input[type=submit], .descriptionProduct .imgProduct a, .ButtonSignOff button {
       width: 50%;
       margin: 1em auto;
       padding: 10px 20px;

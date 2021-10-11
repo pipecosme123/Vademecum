@@ -5,23 +5,27 @@
 }
 
 .ViewProduct .titleMenu h1 {
+   width: 90%;
    font-family: "Heavy";
-   font-size: 1.2em;
+   font-size: 1em;
    color: var(--Color-Grey-Darken);
    margin: 0;
    text-transform: uppercase;
 }
 
 .ViewProduct .titleMenu svg {
+   font-weight: bold;
+   width: 20px;
+   height: 20px;
    color: var(--Color-Blue-Darken);
    margin: 0 10px 0 0;
 }
 
 .descriptionProduct h3 {
-   width: 90%;
+   width: 70%;
    margin: 0 auto 1em;
    font-family: "Italic";
-   font-size: 1.4em;
+   font-size: 1.2em;
    color: var(--Color-Colgate);
    text-align: center;
 }
@@ -39,6 +43,12 @@
 .descriptionProduct .imgProduct a {
    text-decoration: none;
    text-align: center;
+   display: flex;
+   align-items: center;
+}
+
+.descriptionProduct .imgProduct a img{
+   height: 30px;
 }
 
 .infoProduct{
@@ -56,5 +66,8 @@
 }
 
 .infoProduct p{
+   margin: 0 1em;
    font-family: "Italic";
+   text-align: justify;
+   color: var(--Color-Grey-Darken);
 }

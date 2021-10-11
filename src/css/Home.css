@@ -1,6 +1,37 @@
-.Home h3{
+.Home h3 {
    font-family: "LightItalic";
    font-size: 1.3em;
    text-align: left;
    color: var(--Color-Grey);
+}
+
+.Home .titleMenu {
+   display: flex;
+   align-items: center;
+   margin-bottom: 1em;
+}
+
+.Home .titleMenu:active {
+   transform: scale(1.02);
+}
+
+.Home .titleMenu h3 {
+   width: 90%;
+   font-family: "Heavy";
+   font-size: 1em;
+   color: var(--Color-Grey-Darken);
+   margin: 0;
+   text-transform: uppercase;
+}
+
+.Home .titleMenu svg {
+   font-weight: bold;
+   width: 20px;
+   height: 20px;
+   color: var(--Color-Blue-Darken);
+   margin: 0 10px 0 0;
+}
+
+.Home .buttonPreConsulta{
+   margin-top: 1em;
 }
